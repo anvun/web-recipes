@@ -1,43 +1,70 @@
-# Веб додаток для пошуку нових та шейрінгу своїх рецептів
+# Getting Started with Create React App
 
-**Група №3**  
-> Воловик Андрій (ДА-81)  
-> Козінцева Анна (ДА-81)  
-> Коновал Володимир (ДА-82)  
-> Редька Максим (ДА-82)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Усі рецепти
-![all_recipes](https://user-images.githubusercontent.com/81310185/112448263-ebf1d680-8d5a-11eb-9c06-67e497ba9c47.png)
+## Available Scripts
 
-## Сторінка вибору категорій
-![categories](https://user-images.githubusercontent.com/81310185/112448315-f318e480-8d5a-11eb-832e-546f3c07a0a0.png)
+In the project directory, you can run:
 
-## Форма авторизації
-![authorization](https://user-images.githubusercontent.com/81310185/112448300-f0b68a80-8d5a-11eb-96c8-dcf662458b41.png)
+### `npm start`
 
-## Вимоги до компонентів сторінок
-**Дані сторінки мають приблизний стильовий вид та структуру розташування компонентів. В ході роботи вони можуть трішки видозмінюватися**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Сторінка авторизації\реєстрації
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-На даній сторінці реєстрація та авторизація відбуваються через пару логін+пароль (де логін-почта з перевіркою правильності написання, пароль-букви та цифри в будь-якому регістрі)
+### `npm test`
 
-### Сторінка всіх рецептів
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-На даній сторінці сторінці будуть розміщуватися всі рецепти які будуть додані користувачами (Кожен рецепт матиме скорочене та розгоргнете представлення).
+### `npm run build`
 
-В короткому представленні буде міститися назва страви, категорія до якої вона відноситься, фото та опиc страви.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-В повному представленні рецепу додається перелік інградієнтів та процес приготування.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-_Також коже рецепт матиме кнопку для додавання його в улюблені_
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Сторінка з категоріями
+### `npm run eject`
 
-На даній сторінці будуть представлені всі наявні категорії страв. При виборі однієї з них будуть видані всі наявні страви з даної категорії.
-(Сортування відбуваеться по полю категорія в рецеатах)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Сторінка моїх рецептів
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Сторінка міститиме рецепти такогож самого формату як і на сторінці з усіма рецептами, але будуть представоені лише рецепти додані даним користувачем.
-Також буде наявна кнопка для додавання нових рецептів. (Форма рецепту буде містити поле назви, select елемент для вибору категорії страви, поле для опису страви, поле для інградієнтів та поле для процесу приготування)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

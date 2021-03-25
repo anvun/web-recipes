@@ -1,0 +1,21 @@
+.sidebar {
+    height: 100%;
+    width: $sidebar-width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: $sidebar-color;
+    border-right: 1px solid $border-line-color;
+
+    h3{
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        list-style: none;
+        display: inline;
+    }
+}
+

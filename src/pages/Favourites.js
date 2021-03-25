@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-function Favourites(props) {
-    return (
-        <div>
-            <h1>Избранное</h1>
-        </div>
-    );
+function Favourites() {
+  return (
+    <div className="favourites">
+      <h1>Избранное</h1>
+    </div>
+  );
 }
 
 export default Favourites;
