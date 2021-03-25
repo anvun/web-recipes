@@ -1,3 +1,4 @@
+# Веб додаток для пошуку нових та шейрінгу своїх рецептів
 
 ## Усі рецепти
 ![all_recipes](https://user-images.githubusercontent.com/81310185/112448263-ebf1d680-8d5a-11eb-9c06-67e497ba9c47.png)
