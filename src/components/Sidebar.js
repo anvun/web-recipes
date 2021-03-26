@@ -9,10 +9,10 @@ function Sidebar() {
           <Link to='/all-recipes'>
             <li>Все рецепты</li>
           </Link>
-          <Link to='my-recipes'>
+          <Link to='/my-recipes'>
             <li>Мои рецепты</li>
           </Link>
-          <Link to='favourites'>
+          <Link to='/favourites'>
             <li>Избранное</li>
           </Link>
         </ul>
