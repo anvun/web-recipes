@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_elements.scss","../scss/base/_variables.scss","../scss/components/_favourites.scss","../scss/components/_allrecipes.scss","../scss/components/_myrecipes.scss","../scss/components/_sidebar.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;ACCJ;ACHA;EACI,aDIY;;;AELhB;EACI,aFIY;;;AGLhB;EACI,aHIY;;;AILhB;EACI;EACA,OJGY;EIFZ;EACA;EACA;EACA;EACA,kBJHY;EIIZ;;AAEA;EACI;EACA;;AAGJ;EACI;EACA","file":"index.css"}

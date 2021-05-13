@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-function MyRecipes(props) {
-    return (
-        <div>
-            <h1>Мои рецепты</h1>
-        </div>
-    );
+function MyRecipes() {
+  return (
+    <div className="myrecipes">
+      <h1>Мои рецепты</h1>
+    </div>
+  );
 }
 
 export default MyRecipes;

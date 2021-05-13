@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import Reci from './pages/Search';
+import React from 'react';
 
-function AllRecipes(props) {
-    return (
-        <div>
-            <h1>Все рецепты</h1>
-        </div>
-    );
+function AllRecipes() {
+  return (
+    <div className="allrecipes">
+      <h1>Все рецепты</h1>
+    </div>
+  );
 }
 
 export default AllRecipes;
