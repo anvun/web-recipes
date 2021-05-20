@@ -3,7 +3,9 @@ import React from 'react';
 function Favourites() {
   return (
     <div className="favourites">
-      <h1>Избранное</h1>
+      <div className="header">
+        <h1>Избранное</h1>
+      </div>
     </div>
   );
 }
