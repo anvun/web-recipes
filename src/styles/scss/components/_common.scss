@@ -1,0 +1,9 @@
+.header{
+    display: block;
+    background-color: $header-bg-color;
+    font-size: x-small;
+    color: $font-dark;
+    padding: 10px;
+    border-bottom: 1px solid $border-line-color;
+    position: sticky;
+}
