@@ -3,7 +3,6 @@ import Favourites from "./pages/Favourites";
 import MyRecipes from "./pages/MyRecipes";
 import Login from "./components/Login";
 
-
 export const publicRoutes = [
     {
         path: '/all-recipes',

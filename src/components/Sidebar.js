@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Context } from '../index';
-import {privateRoutes, publicRoutes} from '../Routes';
+import { privateRoutes, publicRoutes } from '../Routes';
 
 const Sidebar = () => {
   const {auth} = useContext(Context);
