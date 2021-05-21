@@ -1,26 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Sidebar from './components/Sidebar';
-import Search from './pages/Search';
-import AllRecipes from './pages/AllRecipes';
-import MyRecipes from './pages/MyRecipes';
-import Favourites from './pages/Favourites';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import AppRouter from './components/AppRouter';
+import { BrowserRouter } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Context } from './index';
+import Loader from './components/Loader';
 
-function App() {
+const App = () => {
+  const {auth} = useContext(Context)
+  const [, loading, ] = useAuthState(auth)
+
+  if (loading) {
+    return <Loader/>
+  }
+
   return (
-    <>
-      <Router>
-        <Sidebar />
-        <div className="pages">
-          <Switch>
-            <Route exact path="/" component={Search}/>
-            <Route path="/all-recipes" component={AllRecipes}/>
-            <Route path="/my-recipes" component={MyRecipes}/>
-            <Route path="/favourites" component={Favourites}/>
-          </Switch>
-        </div>
-      </Router>
-    </>
+    <BrowserRouter>
+      <Sidebar/>
+      <AppRouter/>
+    </BrowserRouter>
   );
 }
 

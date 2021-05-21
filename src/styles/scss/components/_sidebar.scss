@@ -1,6 +1,6 @@
 .sidebar {
     box-sizing: border-box;
-    height: 100%;
+    height: 100vh;
     width: $sidebar-width;
     position: fixed;
     top: 0;
@@ -58,7 +58,12 @@
         font-family: 'Pacifico', cursive;
         padding: 10px;
         font-size: large;
-        color: #277e81;
+        color: $green-accent;
     }
     
+}
+
+.nav-item:last-child {
+    margin-top: 15px;
+    //border-top: 1px solid $border-line-color;
 }

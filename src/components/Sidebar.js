@@ -1,37 +1,53 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext} from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import {NavLink} from 'react-router-dom';
+import { Context } from '../index';
+import {privateRoutes, publicRoutes} from '../Routes';
 
-function Sidebar(){
+const Sidebar = () => {
+  const {auth} = useContext(Context);
+  const [user] = useAuthState(auth)
+
   return ( 
     <>
       <nav className="sidebar">
         <div className="sidebar-container">
+          <div className="nav-logo">
+            <img src="../../logo192.png" alt="logo"/>
+            <span>На здоровье</span>
+          </div>
+
           <ul className="sidebar__list">
+            {publicRoutes.map(({path, Component, title, icon}) =>
+              <li className="nav-item">
+                <NavLink exact to={path} activeClassName="active" className="nav-links">
+                  <i class={icon}></i>
+                  {title}
+                </NavLink>
+              </li>
+            )}
+
+            {user != null && 
+              <>
+                {privateRoutes.map(({path, Component, title, icon}) =>
+                  <li className="nav-item">
+                    <NavLink exact to={path} activeClassName="active" className="nav-links">
+                      <i class={icon}></i>
+                      {title}
+                    </NavLink>
+                  </li>
+                )}
+              </>
+            }
+            
             <li className="nav-item">
-              <NavLink exact to="/" className="nav-logo">
-                <img src="../../logo192.png"/>
-                <span>На здоровье</span>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink exact to="/all-recipes" activeClassName="active" className="nav-links">
-                <i class="fas fa-hamburger"></i>
-                Все рецепты
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink exact to="/my-recipes" activeClassName="active" className="nav-links">
-                <i class="fas fa-clipboard-list"></i>
-                Мои рецепты
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink exact to="/favourites" activeClassName="active" className="nav-links">
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
-                Избранное
+              <NavLink exact to="/login" activeClassName="active" className="nav-links">
+                <i class="fas fa-user"></i>
+                Аккаунт
               </NavLink>
             </li>
           </ul>
+          
         </div>
       </nav>
     </>
