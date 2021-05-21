@@ -1,9 +1,7 @@
-import { Component } from "react";
 import AllRecipes from "./pages/AllRecipes";
 import Favourites from "./pages/Favourites";
 import MyRecipes from "./pages/MyRecipes";
 import Login from "./components/Login";
-
 
 export const publicRoutes = [
     {

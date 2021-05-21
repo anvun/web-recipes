@@ -1,16 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, { useContext } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink } from 'react-router-dom';
+import { Context } from '../index';
 import { privateRoutes, publicRoutes } from '../Routes';
 
 const Sidebar = () => {
-  const user = false; 
+  const {auth} = useContext(Context);
+  const [user] = useAuthState(auth)
 
   return ( 
     <>
       <nav className="sidebar">
         <div className="sidebar-container">
           <div className="nav-logo">
-            <img src="../../logo192.png"/>
+            <img src="../../logo192.png" alt="logo"/>
             <span>На здоровье</span>
           </div>
 
@@ -24,7 +27,7 @@ const Sidebar = () => {
               </li>
             )}
 
-            {user == 1 && 
+            {user != null && 
               <>
                 {privateRoutes.map(({path, Component, title, icon}) =>
                   <li className="nav-item">
@@ -40,11 +43,7 @@ const Sidebar = () => {
             <li className="nav-item">
               <NavLink exact to="/login" activeClassName="active" className="nav-links">
                 <i class="fas fa-user"></i>
-                {user ?
-                  <span>Выйти</span>
-                  : 
-                  <span>Войти</span>
-                }
+                Аккаунт
               </NavLink>
             </li>
           </ul>

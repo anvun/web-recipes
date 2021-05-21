@@ -8,15 +8,19 @@
 /* ----- Sidebar ----- */
 /* ----- Header ----- */
 .favourites {
-  margin-left: 250px;
+  background-color: #f7f7f7;
 }
 
-.allrecipes {
-  margin-left: 250px;
+.all-recipes {
+  background-color: #f7f7f7;
 }
 
-.myrecipes {
-  margin-left: 250px;
+.my-recipes {
+  background-color: #f7f7f7;
+}
+
+.cards {
+  background-color: yellowgreen;
 }
 
 .sidebar {
@@ -63,7 +67,7 @@
   background-color: #cccccc;
 }
 .nav-item .active i {
-  color: #5050e4;
+  color: #205193;
 }
 
 .nav-logo {
@@ -87,7 +91,8 @@
 }
 
 .header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   background-color: #F9F9F9;
   font-size: x-small;
   color: #3c3c3c;
@@ -95,6 +100,96 @@
   border-bottom: 1px solid #E0E0E0;
   position: sticky;
   top: 0;
+}
+
+.page {
+  overflow: auto;
+  height: 100vh;
+  margin-left: 250px;
+}
+
+.login-box-contaier {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f7f7;
+  overflow: auto;
+}
+
+.login-box {
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 500px;
+  max-width: 700px;
+}
+.login-box h3 {
+  font-size: 1.5em;
+  color: #277e81;
+}
+.login-box span {
+  color: #808080;
+}
+.login-box button {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  color: white;
+  font-size: medium;
+  border: none;
+  text-align: left;
+  background-color: #4285F4;
+  border-radius: 5px;
+}
+
+.login-box * {
+  margin-bottom: 20px;
+}
+
+.auth-logo {
+  border-radius: 50%;
+  height: 28px;
+  margin: 8px 12px;
+}
+
+.recipe-form-container {
+  display: none;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.recipe-form-box {
+  height: 70vh;
+  width: 80vw;
+  max-width: 700px;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #808080;
+  overflow: auto;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form textarea {
+  resize: vertical;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

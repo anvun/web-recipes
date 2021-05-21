@@ -1,5 +1,6 @@
 .header{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     background-color: $header-bg-color;
     font-size: x-small;
     color: $font-dark;
@@ -7,4 +8,10 @@
     border-bottom: 1px solid $border-line-color;
     position: sticky;
     top: 0;
+}
+
+.page{
+    overflow: auto;
+    height: 100vh;
+    margin-left: $sidebar-width;
 }
