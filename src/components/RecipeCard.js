@@ -28,11 +28,7 @@ class RecipeCard extends Component {
                     </h3>
                 </div>
                 <button className='like' onClick={handleClick}>
-                        <img
-                            className='like_img'
-                            src="../../heart-4222.png" // нужен источник картинки "сердечко"
-                            alt="like"
-                        />
+                    <i class="fas fa-heart"></i>
                 </button>
 
                 <div className='recipe-card_extend'/* у згорнутому варіанті даного блоку не має бути видно */>
