@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
+import RecipeCardList from '../components/RecipeCardList';
+import Recipes from '../RecipesVar';
 
-function AllRecipes() {
-  return (
-    <div className="all-recipes page">
-      <div className="header">
-        <h1>Все рецепты</h1>
+class AllRecipes extends Component {
+  render (){
+    return (
+      <div className="all-recipes page">
+        <div className="header">
+          <h1>Все рецепты</h1>
+        </div>
+          <div className='recipelist'>
+            <RecipeCardList recipes={Recipes} />
+          </div>
       </div>
-    </div>
-  );
+    );
+}
+
 }
 
 export default AllRecipes;
