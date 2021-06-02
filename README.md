@@ -7,13 +7,14 @@
 > Редька Максим (ДА-82)
 
 ## Усі рецепти
-![all_recipes](https://user-images.githubusercontent.com/81310185/112448263-ebf1d680-8d5a-11eb-9c06-67e497ba9c47.png)
+![all_recipes](https://user-images.githubusercontent.com/79270764/120524344-a2b7a600-c3df-11eb-9fc5-806306a605a9.png)
 
 ## Сторінка вибору категорій
-![categories](https://user-images.githubusercontent.com/81310185/112448315-f318e480-8d5a-11eb-832e-546f3c07a0a0.png)
+![categories](https://user-images.githubusercontent.com/79270764/120524472-c37ffb80-c3df-11eb-88ac-a7959347e095.png)
+
 
 ## Форма авторизації
-![authorization](https://user-images.githubusercontent.com/81310185/112448300-f0b68a80-8d5a-11eb-96c8-dcf662458b41.png)
+![authorization](https://user-images.githubusercontent.com/79270764/120524561-dc88ac80-c3df-11eb-808c-343dc55889da.png)
 
 ## Вимоги до компонентів сторінок
 **Дані сторінки мають приблизний стильовий вид та структуру розташування компонентів. В ході роботи вони можуть трішки видозмінюватися**
