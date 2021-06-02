@@ -10,7 +10,7 @@ import RecipeCard from "./RecipeCard";
             </li>
         )
         return(
-            <ul>
+            <ul className="cards">
                 {recipeElements}
             </ul>
         )
