@@ -1,19 +1,57 @@
-.recipecard{
-    box-sizing: border-box;
-    height: 200;
-    width: $recipecard-width;
-    position: fixed;
-    top: 1000;
-    left: 1000;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: $sidebar-bg-color;
-    border-right: 1px solid $border-line-color;
-    padding: 5px;
+.recipecard {
+    height: fit-content;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $border-line-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-.title{
-    text-decoration: none;
+.card-image {
+    max-height: 200px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+
+.card-content {
+    grid-column: 1;
+    padding: 10px;
+}
+
+.card-like {
+    margin: auto;
+    grid-column: 2;
+    button {
+        border: none;
+        width: 36px;
+        height: 36px;
+        font-size: large;
+        border-radius: 50%;
+    }
+}
+
+.recipecard-container {
+    height: calc(100% - 200px);
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    background-color: $sidebar-bg-color;
+}
+
+.title {
     color: $font-dark;
-    display: block;
+    font-size: x-small;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: x-small;
+    color: $font-gray;
+}
+
+.describing {
+    font-size: small;
 }

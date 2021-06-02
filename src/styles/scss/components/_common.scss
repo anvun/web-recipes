@@ -15,3 +15,13 @@
     height: 100vh;
     margin-left: $sidebar-width;
 }
+
+.cards {
+    padding: 5px;
+    li{
+        list-style: none;
+    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+}
